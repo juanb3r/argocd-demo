@@ -23,8 +23,7 @@ spec:
   ## the repository is targeted or `HEAD`.
   source:
     path: python-manifests
-    repoURL:
-    https://github.com/juanb3r/argocd-demo
+    repoURL: https://github.com/juanb3r/argocd-demo
     targetRevision: HEAD
   # # Set the sync policy. 
   ## If left empty, the sync policy will default to manual.
