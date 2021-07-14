@@ -2,14 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx-test
-  name: nginx-test
+    app: nginx
+    tag: alpine
+  name: nginx-alpine
   namespace: {{ .Values.namespace.name }} 
 spec:
   replicas: {{ .Values.replicaCount }} 
   selector:
     matchLabels:
-      app: nginx-test
+      app: nginx
+      tag: alpine
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -18,11 +20,12 @@ spec:
   template:
     metadata:
       labels:
-        app: python-helloworld
+        app: nginx
+        tag: alpine
     spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        name: python-helloworld
-      resources:
+        name: nginx-alpine
+        resources:
 {{ toYaml .Values.resources | indent 12 }}
