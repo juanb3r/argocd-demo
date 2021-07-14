@@ -12,6 +12,12 @@ Mientras que para argocd-nginx-staging.yaml es values-staging.yaml
 
 Y para argocd-nginx-prod.yaml es values-prod.yaml
 
+Se debe usar el comando:
+
+```
+kubectl apply -f argocd-nginx-prod.yaml #ejemplo
+```
+
 La carpeta template contiene todos los manifest a ejecutar para cada una de las aplicaciones, y tendrán variables que son las que hacen que se pueda acceder a cada uno de los valores establecidos en los diferentes servicios.
 
 Esto se encuentra dentro del repositorio juanb3r/argocd-demo/helm/nginx-test
