@@ -1,0 +1,10 @@
+apiVersion: v1
+name: nginx-alpine
+description: Install a nginx deployment
+keywords:
+- nginx
+- test
+version: 1.0.0
+maintainers:
+- name: juanb3r
+  email: juanber@misena.edu.co
