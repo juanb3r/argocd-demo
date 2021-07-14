@@ -25,6 +25,4 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: python-helloworld
       resources:
-        request:
-          memory: {{ .Values.resources.memory }}
-            cpu: {{ .Values.resources.cpu }}
+{{ toYaml .Values.resources | indent 12 }}
