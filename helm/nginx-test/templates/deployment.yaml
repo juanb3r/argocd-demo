@@ -24,3 +24,7 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: python-helloworld
+      resources:
+        request:
+          memory: {{ .Values.resources.memory }}
+            cpu: {{ .Values.resources.cpu }}
