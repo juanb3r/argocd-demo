@@ -6,7 +6,7 @@ image:
   tag: 1.17.0
   
 resources:
-  cpu: 50m
+  cpu: 70m
   memory: 256Mi
   
 service:
