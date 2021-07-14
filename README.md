@@ -14,4 +14,4 @@ Y para argocd-nginx-prod.yaml es values-prod.yaml
 
 La carpeta template contiene todos los manifest a ejecutar para cada una de las aplicaciones, y tendrán variables que son las que hacen que se pueda acceder a cada uno de los valores establecidos en los diferentes servicios.
 
-Esto se encuentra dentro del repositorio juanb3r/argocd-demo/helm/nginx-test![image](https://user-images.githubusercontent.com/74608080/125548928-8d378669-8784-46b2-a078-50c965c52a7c.png)
+Esto se encuentra dentro del repositorio juanb3r/argocd-demo/helm/nginx-test
